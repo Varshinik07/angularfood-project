@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AddtocartComponent } from './addtocart/addtocart.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
     NavbarComponent,
     HomeComponent,
     AddtocartComponent,
+    ContactComponent,
    
   ],
   imports: [
