@@ -7,8 +7,19 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AddtocartComponent } from './addtocart/addtocart.component';
 import { ContactComponent } from './contact/contact.component';
+import {RouterModule,Routes} from '@angular/router';
 
-
+const appRoutes:Routes=[
+  {
+    path:"",component:HomeComponent
+  },
+  {
+    path:"addtocart",component:AddtocartComponent
+  },
+  {
+    path:"contact",component:ContactComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +31,8 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
